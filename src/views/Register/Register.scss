@@ -1,0 +1,69 @@
+.register {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7rem;
+
+    &__form {
+        width: 70%;
+        height: 70%;
+        padding: 2rem;
+        margin-inline: auto;
+        // box-shadow: 4px 0px 75px violet;
+        border: 3px solid violet;
+        border-radius: 25px;
+        padding: 5rem;
+        animation: shadow-cycle 10s infinite;
+    }
+    
+    &__title {
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    &__heading {
+        margin-top: 1rem;
+    }
+
+    &__input {
+        margin: 1.5rem 1rem;
+        padding: 2rem;
+        background-color: rgb(201, 201, 201);
+        border: none;
+        outline: none;
+        border-radius: 25px;
+        transition: all .2s;
+
+        &::-webkit-input-placeholder {
+            color: rgb(83, 83, 83);
+        }
+
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+
+    &__tnc {
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes shadow-cycle {
+    0% {
+      box-shadow: 4px 0px 75px violet;
+    }
+    25% {
+      box-shadow: 4px 0px 75px pink;
+    }
+    50% {
+      box-shadow: 4px 0px 75px yellowgreen;
+    }
+    75% {
+      box-shadow: 4px 0px 75px cyan;
+    }
+    100% {
+      box-shadow: 4px 0px 75px violet;
+    }
+  }  

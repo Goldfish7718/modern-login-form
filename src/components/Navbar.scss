@@ -1,0 +1,22 @@
+.navbar {
+
+    padding: 2rem;
+    display: flex;
+    box-shadow: var(--box-shadow);
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: auto;
+    }
+
+    &__links {
+        font-size: 1.5rem;
+        display: flex;
+        list-style: none;
+    }
+
+    &__link-item {
+        padding: 1rem;
+    }
+}

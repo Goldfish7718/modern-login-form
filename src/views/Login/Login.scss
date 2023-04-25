@@ -1,0 +1,71 @@
+.login {
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    width: 50%;
+    margin-top: 7rem;
+
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
+    
+    &__title {
+        font-size: 3rem;
+    }
+    
+    &__heading {
+        transition: all .5s;
+
+        &:hover {
+            letter-spacing: 10px;
+            cursor: default;
+        }
+    }
+
+    &__form {
+        margin: 2rem;
+    }
+
+    &__input {
+        margin: 1rem;
+        padding: 1.6rem;
+        background-color: rgb(238, 238, 238);
+        border-radius: 25px;
+        border: none;
+        transition: all .2s;
+        outline: none;
+        text-align: center;
+
+        &:focus {
+            transform: scale(1.1);
+        }
+
+        &::-webkit-input-placeholder {
+            text-align: center;
+        }
+    }
+
+    &__tnc {
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+
+    &__signup {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    &__signup-link {
+        color: purple;
+        
+        &:hover {
+            text-decoration: underline 2px solid purple;
+            cursor: pointer;
+        }
+    }
+}
+
