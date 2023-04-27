@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Views Import
-import Login from './views/Login/Login.Jsx'
+import Login from './views/Login/Login'
 import Register from './views/Register/Register';
 import Home from './views/Home/Home'
 
