@@ -6,4 +6,8 @@ To Run this project on your local environment. Fork and clone the repositories a
 `npm install`
 `npm start`.
 
+EDIT:
+The project is live here:
+https://thesyndicate.vercel.app
+
 
