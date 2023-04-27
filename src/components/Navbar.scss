@@ -1,3 +1,5 @@
+@use '../variables' as var;
+
 .navbar {
 
     padding: 2rem;
@@ -8,12 +10,31 @@
         font-size: 2rem;
         font-weight: 700;
         margin-right: auto;
+
+        @media only screen and (max-width: var.$bp-700px) {
+            margin-inline: auto;
+            padding: 1.6rem;
+        }
+    }
+
+    &__hamburger-icon {
+
+        visibility: hidden;
+
+        @media only screen and (max-width: var.$bp-700px) {
+            visibility: visible;
+        }        
     }
 
     &__links {
         font-size: 1.5rem;
         display: flex;
+        align-items: center;
         list-style: none;
+
+        @media only screen and (max-width: var.$bp-700px) {
+            display: none;
+        }
     }
 
     &__link-item {

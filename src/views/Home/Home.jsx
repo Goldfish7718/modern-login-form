@@ -14,7 +14,7 @@ const Home = () => {
         <Navbar />
         <main className="main">
           <FontAwesomeIcon icon={faCrown} size='8x' />
-            <h1 className='main__heading'>THE SYNDICATE</h1>
+          <h1 className='main__heading'>THE SYNDICATE</h1>
 
             <div className="main__user-options">
                 <button onClick={() => navigate('/login')} className="main__button">Login</button>

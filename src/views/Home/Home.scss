@@ -1,9 +1,11 @@
+@use '../../variables' as var;
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     background-color: black;
     color: white;
 
@@ -11,6 +13,18 @@
         font-size: 10rem;
         font-weight: 700;
         margin: 2rem;
+
+        @media only screen and (max-width: var.$bp-1000px) {
+            font-size: 8rem;
+        }
+
+        @media only screen and (max-width: var.$bp-800px) {
+            font-size: 6rem;
+        }
+
+        @media only screen and (max-width: var.$bp-400px) {
+            font-size: 5rem;
+        }
     }
 
     &__user-options {
@@ -32,6 +46,11 @@
 
         &:hover {
             transform: translateY(-4px) translateX(4px);
+        }
+
+        @media only screen and (max-width: var.$bp-400px) {
+            font-size: 2rem;
+            width: 18rem;
         }
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCrown } from '@fortawesome/free-solid-svg-icons'
+import { faCrown, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 import './Register.scss'
 
 const Register = () => {
@@ -20,12 +20,12 @@ const Register = () => {
             <input type="text" className='register__input' placeholder='Last Name' />
           </div>
 
-          <input type="text" className="register__input" placeholder='Username' /><br />
+          <input type="text" className="register__input" placeholder='Username' />
           <input type="password" className="register__input" placeholder='Password' /><br />
 
           <p className="register__tnc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cum, ut distinctio atque commodi nihil eligendi incidunt debitis a temporibus?</p>
             
-          <button className='register__button btn-maroon'>Register</button>
+          <button className='register__button btn-maroon'>Sign Up! <FontAwesomeIcon icon={faRightToBracket} /></button>
         </div>
       </div>
     </>
