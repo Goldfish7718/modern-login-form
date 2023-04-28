@@ -1,0 +1,89 @@
+@use '../../variables' as var;
+
+.landing {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    color: white;
+
+    &__panel {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        animation: shadow-cycle 10s infinite;
+        border-radius: 25px;
+        height: 75%;
+        width: 50%;
+
+        @media only screen and (max-width: var.$bp-900px) {
+            width: 70%;
+        }
+
+        @media only screen and (max-width: var.$bp-500px) {
+            width: 90%;
+        }
+    }
+
+    &__name {
+        font-size: 3rem;
+        margin: 2rem;
+
+        @media only screen and (max-width: var.$bp-1100px) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: var.$bp-900px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: var.$bp-600px) {
+            font-size: 1.7rem;
+        }
+    }
+
+    &__username {
+        font-size: 2.5rem;
+        background: linear-gradient(to right, pink, orange, purple);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        @media only screen and (max-width: var.$bp-500px) {
+            font-size: 3rem;
+        }
+    }
+
+    &__logout-button {
+        margin: 2rem;
+        font-size: 1.5rem;
+        outline: none;
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 2rem 5rem;
+        width: 40%;
+        border-radius: 25px;
+        border: 2px solid violet;
+        box-shadow: 4px 0px 75px violet;
+        transition: all .4s;
+
+        &:hover {
+            letter-spacing: 8px;
+        }
+
+        @media only screen and (max-width: var.$bp-500px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: var.$bp-900px) {
+            font-size: 1.4rem;
+        }
+    }
+}

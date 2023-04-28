@@ -7,6 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Login from './views/Login/Login'
 import Register from './views/Register/Register';
 import Home from './views/Home/Home'
+import Landing from './views/Landing/Landing';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
+      <Route path='/home' element={<Landing />} />
     </Routes>
   )
 }
