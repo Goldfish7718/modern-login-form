@@ -74,7 +74,11 @@
         }
     }
 
-    &__tnc {
+    &__error {
+      color: red;
+    }
+
+    &__tnc, &__error {
         padding: 2rem;
         font-size: 1.5rem;
 

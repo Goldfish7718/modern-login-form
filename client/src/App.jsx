@@ -8,6 +8,12 @@ import Login from './views/Login/Login'
 import Register from './views/Register/Register';
 import Home from './views/Home/Home'
 import Landing from './views/Landing/Landing';
+import axios from 'axios';
+
+export const API_URL = import.meta.env.VITE_API_URL;
+
+const token = localStorage.getItem('token');
+axios.defaults.headers.common['Authorization'] = token ? token : null;
 
 function App() {
 

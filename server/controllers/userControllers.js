@@ -109,8 +109,7 @@ export const loginUser = async (req, res) => {
         res 
             .status(200)
             .json({
-                message: `Logged in as ${userName}` ,
-                token
+                token: token
             });
 
     } catch (err) {
