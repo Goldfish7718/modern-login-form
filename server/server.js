@@ -12,7 +12,9 @@ const PORT = process.env.PORT || 5000;
 const db_URI = process.env.db_URI;
 
 app.use(cors({
-    origin: 'https://thesyndicate.vercel.app/'
+    origin: 'https://thesyndicate.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
