@@ -20,6 +20,10 @@ app.use((req, res, next) => {
 
 app.use('/api/auth', userRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Hello From server!');
+})
+
 const connetDB = async url => {
     await mongoose  
         .connect(url)
